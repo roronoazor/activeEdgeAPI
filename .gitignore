@@ -2,7 +2,6 @@ venv/*
 *.pyc
 db.sqlite31
 .idea/*
-*/migrations/*
 media/*
 */__init__.py
 notes.txt
