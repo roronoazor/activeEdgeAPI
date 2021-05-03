@@ -83,6 +83,7 @@ db = "prod"
 if db == "prod":
     DATABASES = dict()
     prod_db = dj_database_url.config(conn_max_age=500)
+    DATABASES["default"] = dict()
     DATABASES['default'].update(prod_db)
 else:
     DATABASES = {
