@@ -27,6 +27,13 @@ below is the employee table schema
     
 below are details of each api
 
+## AUTHENTICATION  
+*all the endpoints are protected, and hence require authentication to access*  
+url: *https://activeedgeapi.herokuapp.com/api-auth/login/*
+username: ace
+password: admin
+
+
 
 ## CREATE EMPLOYEE  
 *creates and employee and records and stores it to the database*  
