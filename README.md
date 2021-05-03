@@ -3,10 +3,10 @@ a simple api collection that allows for the creation, read, update, and deletion
 
 
 ## API ARCHITECTURE
-the api's are built using python **django** rest framework with **postgresql** database for persistent storage of data  
-the api's are hosted on heroku.com  
-the api's support pagination, filtering, and authentication
-below is the employee table schema
+The api's are built using python **django** rest framework with **postgresql** database for persistent storage of data  
+The api's are hosted on heroku.com  
+The api's support pagination, filtering, and authentication
+Below is the employee table schema
 
 
 ### **EMPLOYEE SCHEMA**
@@ -29,9 +29,12 @@ below are details of each api
 
 ## AUTHENTICATION  
 *all the endpoints are protected, and hence require authentication to access*  
-url: *https://activeedgeapi.herokuapp.com/api-auth/login/*
-username: ace
-password: admin
+url: *https://activeedgeapi.herokuapp.com/api-auth/login/*  
+username: ace  
+password: admin  
+after a successful login, you will be redirected to django default browsable api interface in the browser
+from here the user can test the api's can be tested similar to postman.
+*more info can be found at this link: [Django browsable api interface!](https://www.django-rest-framework.org/topics/browsable-api/)*
 
 
 
@@ -98,5 +101,3 @@ method: **DELETE**
 return a success message, 200 if successful
 
 note: a 404 is always returned, anytime an employee id is not found in the database.
-
-DELETE http://127.0.0.1:8000/employee/<int:employee_id>
