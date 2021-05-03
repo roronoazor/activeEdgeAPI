@@ -100,4 +100,4 @@ url: *https://activeedgeapi.herokuapp.com/employee/<employee_id>*
 method: **DELETE**  
 return a success message, 200 if successful
 
-note: a 404 is always returned, anytime an employee id is not found in the database.
+note: a 404 is always returned, anytime an employee id is not found in the database. 
