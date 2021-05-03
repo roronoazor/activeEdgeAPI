@@ -1,1 +1,1 @@
-web: gunicorn activeedgeapi.wsgi --log-file -
+web: gunicorn activeEdgeAPI.wsgi --log-file -
