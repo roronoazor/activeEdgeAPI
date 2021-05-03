@@ -14,7 +14,7 @@ class GetEmployeeSerializer(serializers.ModelSerializer):
         fields = ['employee_id', 'first_name', 'last_name', 'age', 'join_date']
 
     def get_employee_id(self, employee):
-        return employee.id
+        return "E%s" % str(employee.id).zfill(5)
 
     def get_age(self, employee):
         return "%s" % (datetime.now().year - employee.date_of_birth.year)
